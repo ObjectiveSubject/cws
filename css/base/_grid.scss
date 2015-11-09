@@ -1,0 +1,94 @@
+/* Grid
+ * -------------------------------------------- */
+
+[class*="col-"] {
+	width: 100%;
+	// min-height: 15px;
+	// background-color: #ddd;
+	// margin-bottom: 15px;
+}
+
+@for $i from 1 through $grid-columns {
+	.col-#{$i} {
+		@include span-columns($i);
+	}	
+}
+
+@for $i from 1 through $grid-columns {
+	.col-sm-#{$i} {
+		@include media($screen_sm) {
+			@include span-columns( $i );
+		}
+	}
+}
+
+@for $i from 1 through $grid-columns {
+	.col-md-#{$i} {
+		@include media($screen_md) {
+			@include span-columns( $i );
+		}
+	}
+}
+
+@for $i from 1 through $grid-columns {
+	.col-lg-#{$i} {
+		@include media($screen_lg) {
+			@include span-columns( $i );
+		}
+	}
+}
+
+@for $i from 1 through $grid-columns {
+	.col-xl-#{$i} {
+		@include media($screen_xl) {
+			@include span-columns( $i );
+		}
+	}
+}
+
+.omega {
+	@include omega();
+}
+.omega-sm {
+	@include media($screen_sm) {
+		@include omega();
+	}
+}
+.omega-md {
+	@include media($screen_md) {
+		@include omega();
+	}
+}
+.omega-lg {
+	@include media($screen_lg) {
+		@include omega();
+	}
+}
+.omega-xl {
+	@include media($screen_xl) {
+		@include omega();
+	}
+}
+.gutter {
+	margin-right: $gutter;
+}
+.gutter-sm {
+	@include media($screen_sm) {
+		margin-right: $gutter;
+	}
+}
+.gutter-md {
+	@include media($screen_md) {
+		margin-right: $gutter;
+	}
+}
+.gutter-lg {
+	@include media($screen_lg) {
+		margin-right: $gutter;
+	}
+}
+.gutter-xl {
+	@include media($screen_xl) {
+		margin-right: $gutter;
+	}
+}

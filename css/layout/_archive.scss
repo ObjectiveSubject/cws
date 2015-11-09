@@ -1,0 +1,57 @@
+.archive-row {
+	margin: rem(100) 0 0;
+
+	@include media($screen_sm) {
+		.entry-image, .entry-summary {	
+			@include span-columns(4);
+		}
+	}
+
+	@include media($screen_md) {
+		.entry-header, .entry-summary {
+			@include span-columns(4);
+		}
+		.entry-image {
+			margin-top: 0;
+		}
+		&.case-study-preview .entry-image {
+			@include direction-context(right-to-left) {
+				@include span-columns(3);
+			}
+		}
+		&.service-preview .entry-image {
+			@include direction-context(right-to-left) {
+				@include span-columns(2);
+			}
+		}
+	}
+
+	.read-more {
+		color: $black;
+		&:hover, &:active, &:focus {
+			color: $color_link_hover;
+		}
+	}
+}
+
+.archive-tile {
+	margin: rem(50) 0 0;
+	@include media($screen_md) {
+		@include span-columns(4);
+		@include omega(2n);
+	}
+	@include media($screen_lg) {
+		&:nth-child(2n + 1) {
+			clear: none;
+		}
+		&:nth-child(2n) {
+			margin-right: $gutter;
+		}
+		@include span-columns(2);
+		@include shift(1);
+		@include omega(3n);
+		&:nth-child(3n+1) {
+			margin-left: 0;
+		}
+	}	
+}

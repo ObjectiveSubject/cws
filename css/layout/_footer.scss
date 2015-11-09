@@ -1,0 +1,42 @@
+.site-footer {
+	width: 100%;
+	padding: rem(65) 0;
+	color: white;
+	background-color: $black;
+	background-image: url(images/cws-pattern.png);
+	background-repeat: no-repeat;
+	background-size: 500px 175px;
+	background-position: right bottom;
+	@include retina-rules {
+		background-image: url(images/cws-pattern@2x.png);
+	}
+
+	&.fixed {
+		position: fixed;
+		bottom: 0;
+	}
+}
+
+.site-info {
+	.business-name {
+		@include media($screen_md) {
+			@include span-columns(3);
+		}
+	}
+}
+
+.footer-navigation {
+	padding: rem(65) 0;
+
+	.menu-primary-container,
+	.menu-secondary-container {
+		@include media($screen_sm) {
+			@include span-columns(2);
+		}
+	}
+
+	a {
+		@include link-light;
+		@include text-underline;
+	}
+}

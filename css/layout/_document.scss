@@ -1,0 +1,32 @@
+body {
+	&.admin-bar {
+		margin-top: -32px;
+	}
+}
+
+.outer-container {
+  @include outer-container(rem(1024));
+  padding: 0 $size_container_padding;
+  box-sizing: content-box;
+}
+
+.site-content {
+	@include media($screen_md) {
+		margin-top: rem(140);
+	}
+}
+
+.site-nav {
+	display: block;
+
+	ul {
+		list-style: none;
+		margin: 0;
+		padding-left: 0;
+	}
+
+	.current_page_item > a,
+	.current-menu-item > a,
+	.current_page_ancestor > a {
+	}
+}

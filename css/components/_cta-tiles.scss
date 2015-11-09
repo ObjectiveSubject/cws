@@ -1,0 +1,32 @@
+.cta-tiles {
+	margin: rem(100) 0 0;
+
+	a:hover,
+	a:active,
+	a:focus {
+		color: $red;
+	}
+}
+
+.cta-tile {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 300px;
+	min-height: rem(300);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+
+	@include media($screen_md) {
+		float: left;
+		width: 50%;
+		height: 45vw;
+		max-height: rem(580);
+	}
+}
+.cta-tile-title {
+	@include media($screen_xl) {
+		font-size: rem(42);
+	}
+}

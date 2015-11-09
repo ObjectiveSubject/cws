@@ -1,0 +1,76 @@
+#masthead {
+	width: 100%;
+	padding-top: rem(20);
+	transition: all 300ms ease;
+	// background: rgba(white, 0);
+	// opacity: 0.25;
+	@include media($screen_md) {
+		padding-top: rem(50);
+		min-height: rem(140);
+	}
+
+	&.fixed {
+		@include media($screen_md) {
+			position: fixed;
+			top: 0;
+		}
+	}
+
+	// &:hover {
+	// 	background: rgba(white, 0.9);
+	// 	opacity: 1;
+	// }
+}
+
+.site-branding {
+	@include media($screen_md) {
+		@include span-columns(5);
+	}
+}
+
+.site-title {
+	a {
+		color: $black;
+		&:hover {
+			color: $color_link_hover;
+		}
+	}
+}
+
+.main-navigation {
+	@include media($screen_md) {
+		@include span-columns(3);
+	}
+
+	a {
+		color: $black;
+		@include text-underline;
+		&:active,
+		&:hover,
+		&:focus {
+			color: $color_link_hover;
+		}
+	}
+
+	.menu-primary-container {
+		@include media($screen_md) {
+			@include span-columns(2 of 3);
+		}
+	}
+	.menu-secondary-container {
+		@include media($screen_md) {
+			@include span-columns(1 of 3);
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
