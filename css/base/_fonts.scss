@@ -16,7 +16,7 @@
     src:url("fonts/lineto-akkurat-regular.eot");
     src:url("fonts/lineto-akkurat-regular.eot?#iefix") format("embedded-opentype"),
         url("fonts/lineto-akkurat-regular.woff") format("woff");
-    font-weight: normal;
+    font-weight: 500;
     font-style: normal;
 }
 @font-face {
@@ -24,7 +24,7 @@
     src:url("fonts/lineto-akkurat-bold.eot");
     src:url("fonts/lineto-akkurat-bold.eot?#iefix") format("embedded-opentype"),
         url("fonts/lineto-akkurat-bold.woff") format("woff");
-    font-weight: bold;
+    font-weight: 700;
     font-style: normal;
 }
 @font-face {
@@ -32,6 +32,6 @@
     src:url("fonts/lineto-akkurat-light.eot");
     src:url("fonts/lineto-akkurat-light.eot?#iefix") format("embedded-opentype"),
         url("fonts/lineto-akkurat-light.woff") format("woff");
-    font-weight: light;
+    font-weight: 300;
     font-style: normal;
 }

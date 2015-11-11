@@ -26,6 +26,19 @@
 // ======================================= /
 a.no-decoration { text-decoration: none; }
 
+
+// Color
+// ======================================= /
+@each $key, $value in $color_map {
+  .bg-color-#{$key} {
+    background-color: $value;
+  }
+  .bg-noise-#{$key} {
+    background-image: url(images/noise-#{$key}.png);
+    background-repeat: repeat;
+  }
+}
+
 // Media Size
 // ======================================= /
 .media-size  {

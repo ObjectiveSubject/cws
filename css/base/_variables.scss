@@ -15,7 +15,6 @@ $screen_md: 768px;
 $screen_lg: 1064px;
 $screen_xl: 1400px;
 
-
 // Colors
 // ============================================ /
 $blue: #3f85ea;
@@ -27,6 +26,7 @@ $powder: #eadcdd;
 $midnight: #563f83;
 
 $color_map: (
+	'white'		: #FFF,
 	'blue'		: $blue,
 	'red'		: $red,
 	'black'		: $black,

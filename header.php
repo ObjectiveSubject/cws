@@ -26,11 +26,19 @@
 				<div class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><strong><?php bloginfo( 'name' ); ?></strong></a></div>
 				<div class="site-description">Business Advisory<br/>&amp; Tax Consulting</div>
 			</div><!-- .site-branding -->
+			<?php //if ( !is_home() ) : ?>
 			<nav id="site-navigation" class="main-navigation site-nav" role="navigation">
 				<?php wp_nav_menu( array( 'menu' => 'primary', 'menu_id' => 'primary-menu-header' ) ); ?>
 				<?php wp_nav_menu( array( 'menu' => 'secondary', 'menu_id' => 'secondary-menu-header' ) ); ?>
 			</nav><!-- #site-navigation -->
+			<?php //endif; ?>
+			<a href="#site-navigation" class="menu-toggle"><span class="menu-icon"></span><span class="hide">Menu</span></a>
 		</div>
 	</header><!-- #masthead -->
+
+	<!--<div id="mobile-menu" class="mobile-menu">
+		<?php //wp_nav_menu( array( 'menu' => 'primary', 'menu_id' => 'primary-menu-header' ) ); ?>
+		<?php //wp_nav_menu( array( 'menu' => 'secondary', 'menu_id' => 'secondary-menu-header' ) ); ?>
+	</div>-->
 
 	<div id="content" class="site-content">

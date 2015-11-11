@@ -8,8 +8,6 @@
  */
 ?>
 
-	<?php get_template_part( 'cta-tiles' ); ?>
-
 	</div><!-- #content -->
 
 	<footer id="colophon" class="site-footer" role="contentinfo">

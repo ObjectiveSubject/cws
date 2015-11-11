@@ -1,5 +1,8 @@
 .cta-tiles {
 	margin: rem(100) 0 0;
+	.home & {
+		margin-top: 0;
+	}
 
 	a:hover,
 	a:active,

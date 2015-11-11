@@ -1,22 +1,14 @@
-.sticky {
-	display: block;
-}
-
 .hentry {
 	margin: 0 0 1.5em;
 }
 
-.byline,
-.updated:not(.published){
-	display: none;
-}
-
-.single .byline,
-.group-blog .byline {
-	display: inline;
+.page-header,
+.entry-header {
+	position: relative;
 }
 
 .entry-title {
+
 }
 .page-title {
 	color: $blue;

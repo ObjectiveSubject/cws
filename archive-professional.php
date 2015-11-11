@@ -13,6 +13,9 @@ get_header(); ?>
 
 		<header class="page-header">
 			<h1 class="page-title">Professionals</h1>
+			<div class="cws-sticky-logo sticky">
+				<img src="<?php echo get_template_directory_uri() . '/images/logo-blue@2x.png'; ?>" width="100" />
+			</div>
 		</header><!-- .page-header -->
 
 		<main id="main" class="site-main clearfix" role="main">
@@ -35,5 +38,10 @@ get_header(); ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
+
+	<section class="cta-tiles clearfix">
+		<?php get_template_part( 'cta-tile', 'case-studies' ); ?>
+		<?php get_template_part( 'cta-tile', 'contact' ); ?>
+	</section>
 
 <?php get_footer(); ?>

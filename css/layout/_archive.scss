@@ -17,11 +17,13 @@
 		&.case-study-preview .entry-image {
 			@include direction-context(right-to-left) {
 				@include span-columns(3);
+				margin-right: 0;
 			}
 		}
 		&.service-preview .entry-image {
 			@include direction-context(right-to-left) {
 				@include span-columns(2);
+				margin-right: 0;
 			}
 		}
 	}

@@ -9,6 +9,9 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
 		<?php the_title( '<h1 class="entry-title page-title">', '</h1>' ); ?>
+		<div class="cws-sticky-logo sticky">
+			<img src="<?php echo get_template_directory_uri() . '/images/logo-blue@2x.png'; ?>" width="100" />
+		</div>
 	</header><!-- .entry-header -->
 
 	<?php if ( has_post_thumbnail() ) : ?>

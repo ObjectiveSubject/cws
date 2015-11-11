@@ -1,0 +1,38 @@
+.cws-sticky-logo {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 75px;
+    height: 45px;
+    transition: right 250ms ease;
+    @include media($screen-sm) {
+        display: block;
+    }
+    @include media($screen-md) {
+        width: 100px;
+        height: 60px;
+    }
+    @include media($screen-xl) {
+        right: -62px;
+    }
+
+    img {
+        max-width: 75px;
+        @include media($screen-md) {
+            max-width: none;
+        }
+    }
+
+    &.sticky {
+    	img {
+    		position: fixed;
+            z-index: 900;
+
+            .home-section & {
+                bottom: rem(20);
+                right: rem(20);
+            }
+    	}
+    }
+}

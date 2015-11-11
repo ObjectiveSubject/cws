@@ -31,4 +31,13 @@ get_header(); ?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
+	<section class="cta-tiles clearfix">
+		<?php get_template_part( 'cta-tile', 'case-studies' ); ?>
+		<?php if ( is_page('contact') ) {
+			get_template_part( 'cta-tile', 'services' ); 
+		} else {
+			get_template_part( 'cta-tile', 'contact' ); 
+		} ?>
+	</section>
+
 <?php get_footer(); ?>

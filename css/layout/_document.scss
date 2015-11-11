@@ -5,14 +5,19 @@ body {
 }
 
 .outer-container {
+  position: relative;
   @include outer-container(rem(1024));
   padding: 0 $size_container_padding;
   box-sizing: content-box;
 }
 
 .site-content {
+	margin-top: rem(100);
 	@include media($screen_md) {
 		margin-top: rem(140);
+	}
+	.home & {
+		margin-top: 0;
 	}
 }
 

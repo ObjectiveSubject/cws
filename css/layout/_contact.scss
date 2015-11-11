@@ -1,0 +1,22 @@
+.page-template-page-contact {
+	.cta-tiles {
+		margin-top: 0;
+	}
+	.content-area {
+		padding-bottom: rem(270);
+		background-image: url(images/map.png);
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+		@include media($screen-lg) {
+			padding-bottom: rem(200);
+		}
+
+		h2, h3, p, a {
+			color: $blue;
+		}
+		a:hover {
+			color: $color_text_main;
+		}
+	}
+}

@@ -4,13 +4,22 @@
  */
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+<article id="post-<?php the_ID(); ?>" <?php post_class('outer-container'); ?>>
 	<header class="entry-header">
 		<h1 class="entry-title">H1. cws Boilerplate</h1>
 	</header><!-- .entry-header -->
 
 	<div class="entry-content">
+	
 		<h2>H2. Nulla eleifend tortor vitae lorem accumsan</h2>
+
+		<h3>H3. Aenean at volutpat urna, quis mattis augue. Maecenas tincidunt sollicitudin bibendum. Fusce sed molestie eros. Cras non justo nunc. </h3>
+
+		<h4>H4. Aenean at volutpat urna, quis mattis augue. Maecenas tincidunt sollicitudin bibendum. Fusce sed molestie eros. Cras non justo nunc. </h4>
+
+		<h5>H5. Aenean at volutpat urna, quis mattis augue. Maecenas tincidunt sollicitudin bibendum. Fusce sed molestie eros. Cras non justo nunc. </h5>
+
+		<h6>H6. Aenean at volutpat urna, quis mattis augue. Maecenas tincidunt sollicitudin bibendum. Fusce sed molestie eros. Cras non justo nunc. </h6>
 
 		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <a href="#">Morbi justo lorem</a>, congue eu ipsum eu, feugiat ornare ex. Nulla eleifend tortor vitae lorem accumsan, ac pellentesque elit pretium. Mauris ac ipsum eros. Suspendisse dolor mi, viverra sit amet diam in, convallis tempus ex. Ut cursus mi vel lacus facilisis suscipit. Curabitur facilisis turpis in augue finibus, eu congue magna condimentum.</p>
 

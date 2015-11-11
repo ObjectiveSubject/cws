@@ -42,7 +42,13 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 @import "layout/footer";
 
 
-/* Modules
+/* Layout
+----------------------------------------------- */
+@import "layout/home";
+@import "layout/contact";
+
+
+/* Components
 ----------------------------------------------- */
 @import "components/asides";
 @import "components/buttons";
@@ -52,3 +58,4 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 @import "components/navigation";
 @import "components/widgets";
 @import "components/cta-tiles";
+@import "components/sticky-logo";
