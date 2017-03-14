@@ -16,7 +16,7 @@
 	</header><!-- .entry-header -->
 
 	<div class="entry-summary">
-		<p><?php the_excerpt(); ?></p>
+		<?php the_excerpt(); ?>
 		<p><a href="<?php the_permalink(); ?>" class="read-more underline">View Case Study</a></p>
 	</div><!-- .entry-content -->
 </article><!-- #post-## -->
