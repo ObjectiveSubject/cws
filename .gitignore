@@ -20,8 +20,8 @@ wp-content/plugins/**
 wp-content/themes/cws/node_modules/
 
 # Functionality Plugin
-# !wp-content/plugins/core-functionality/
-# !wp-content/plugins/core-functionality/**
+!wp-content/plugins/core-functionality/
+!wp-content/plugins/core-functionality/**
 
 
 # Stop editing!
