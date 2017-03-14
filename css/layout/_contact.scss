@@ -4,7 +4,6 @@
 	}
 	.content-area {
 		padding-bottom: rem(270);
-		background-image: url(images/map.png);
 		background-size: cover;
 		background-repeat: no-repeat;
 		background-position: center;
@@ -17,7 +16,7 @@
 		}
 		a {
 			@include link-color($blue, $red);
-			@include text-underline($black);
+			@include text-underline($red);
 			@include text-underline-hover($red);
 		}
 	}

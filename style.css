@@ -2250,7 +2250,6 @@ body.admin-bar {
 }
 .page-template-page-contact .content-area {
   padding-bottom: 16.875rem;
-  background-image: url(images/map.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -2276,7 +2275,7 @@ body.admin-bar {
 .page-template-page-contact .content-area a:after {
   content: "";
   height: 1px;
-  background: #31393e;
+  background: #e91048;
   display: block;
   position: absolute;
   bottom: 0;

@@ -4,9 +4,20 @@
  * @package cws
  */
 
-get_header(); ?>
+get_header();
+$location = get_field('location');
+$username = "objectivesubject";
+$lon = $location['lng'];
+$lat = $location['lat'];
+$map_style = "cj0998mpu00652rpimpjanjio";
+$overlay = "pin-l+e91048\({$lon},{$lat}\)";
+$width = 1280;
+$height = 720;
+$access_token = "pk.eyJ1Ijoib2JqZWN0aXZlc3ViamVjdCIsImEiOiJPY25wYWRjIn0.AFZPHessR_DGefRkzPilDA";
+$zoom = 17.5;
+$url = "//api.mapbox.com/styles/v1/{$username}/{$map_style}/static/{$overlay}/{$lon},{$lat},{$zoom},0.00,0.00/{$width}x{$height}@2x?access_token={$access_token}"; ?>
 
-	<div id="primary" class="content-area">
+	<div id="primary" class="content-area" style="background-image: url(<?php echo $url; ?>);">
 		<main id="main" class="site-main outer-container" role="main">
 
 			<?php while ( have_posts() ) : the_post(); ?>
