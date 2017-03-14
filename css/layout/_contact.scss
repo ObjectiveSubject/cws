@@ -15,8 +15,10 @@
 		h2, h3, p, a {
 			color: $blue;
 		}
-		a:hover {
-			color: $color_text_main;
+		a {
+			@include link-color($blue, $red);
+			@include text-underline($black);
+			@include text-underline-hover($red);
 		}
 	}
 }

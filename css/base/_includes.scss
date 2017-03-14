@@ -81,15 +81,15 @@
 	line-height: $h6_line_height;
 }
 
-@mixin link-light() {
-	color: white;
+@mixin link-color($color: white, $hover: $color_link_hover) {
+	color: $color;
 	&:visited {
-		color: white;
+		color: $color;
 	}
 	&:hover,
 	&:focus,
 	&:active {
-		color: $color_link_hover;
+		color: $hover;
 	}
 }
 

@@ -170,21 +170,15 @@
 	}
 
 	a {
+		@extend a.dark;
 		@extend a.underline;
 		margin: 0.5em 0;
 	    display: inline-block;
-		color: $black;
 
 		@include media($screen_md) {
 			margin: 0;
 			display: inline;
 		}
-
-		// &:active,
-		// &:hover,
-		// &:focus {
-		// 	color: $color_link_hover;
-		// }
 	}
 
 	.menu-primary-container {

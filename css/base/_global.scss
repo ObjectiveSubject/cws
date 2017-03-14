@@ -28,7 +28,10 @@ a {
 	text-decoration: none;
 	transition: all 300ms ease;
 	&.light {
-		@include link-light;
+		@include link-color(white);
+	}
+	&.dark {
+		@include link-color($color_text_main);
 	}
 	&.underline {
 		@include text-underline;
