@@ -72,9 +72,9 @@
 
 .home-navigation {
 	a {
-		color: white;
+		@extend a.light;
+		@extend a.underline;
 	    text-shadow: 0px 1px 1px #555;
-		@include text-underline;
 		&:active,
 		&:hover,
 		&:focus {
@@ -180,11 +180,11 @@
 			display: inline;
 		}
 
-		&:active,
-		&:hover,
-		&:focus {
-			color: $color_link_hover;
-		}
+		// &:active,
+		// &:hover,
+		// &:focus {
+		// 	color: $color_link_hover;
+		// }
 	}
 
 	.menu-primary-container {

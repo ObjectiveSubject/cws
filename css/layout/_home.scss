@@ -37,6 +37,7 @@
     .outer-container {
     	.cws-flexbox & {
 		    @include media($screen-md) {
+				height: 100vh;
 				display: flex;
 			}
 		}
@@ -56,8 +57,9 @@
     	}
 
     	a {
+			@extend a.light;
+			@extend a.underline;
 			color: white;
-			@include text-underline;
 			&:active,
 			&:hover,
 			&:focus {
@@ -144,6 +146,7 @@
 
 	.outer-container {
 		.cws-flexbox & {
+			height: calc( 100vh - 52px );
 			display: flex;
 		}
 	}
