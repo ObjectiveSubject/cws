@@ -36,7 +36,8 @@
 	}
 
 	a {
-		@include link-light;
 		@include text-underline;
+		@include text-underline-hover;
+		@include link-light;
 	}
 }

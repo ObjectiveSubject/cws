@@ -32,6 +32,7 @@ a {
 	}
 	&.underline {
 		@include text-underline;
+		@include text-underline-hover;
 	}
 
 	&:visited {

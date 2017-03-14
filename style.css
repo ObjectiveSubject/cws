@@ -317,18 +317,26 @@ a.light:visited {
 a.light:hover, a.light:focus, a.light:active {
   color: #3f85ea;
 }
-a.underline {
+a.underline, .main-navigation a {
   position: relative;
 }
-a.underline:after {
+a.underline:after, .main-navigation a:after {
   content: "";
   height: 1px;
   background: #e91048;
-  width: 100%;
   display: block;
   position: absolute;
   bottom: 0;
   left: 0;
+  right: 0;
+}
+a.underline:after, .main-navigation a:after {
+  transition: all 200ms ease;
+}
+a.underline:hover:after, .main-navigation a:hover:after {
+  left: -0.3em;
+  right: -0.3em;
+  background: #3f85ea;
 }
 a:visited {
   color: #e91048;
@@ -1592,11 +1600,11 @@ body.admin-bar {
   content: "";
   height: 1px;
   background: #e91048;
-  width: 100%;
   display: block;
   position: absolute;
   bottom: 0;
   left: 0;
+  right: 0;
 }
 .home-navigation a:active, .home-navigation a:hover, .home-navigation a:focus {
   color: #3f85ea;
@@ -1667,13 +1675,11 @@ body.admin-bar {
   background-color: transparent;
 }
 .menu-toggle.active .menu-icon:before {
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
+  transform: rotate(45deg);
   top: 0;
 }
 .menu-toggle.active .menu-icon:after {
-  -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
+  transform: rotate(-45deg);
   top: 0;
 }
 
@@ -1693,6 +1699,7 @@ body.admin-bar {
     position: static;
     padding: 0;
     opacity: 1 !important;
+    background: none;
     float: left;
     display: block;
     margin-right: 3.57866%;
@@ -1710,17 +1717,6 @@ body.admin-bar {
   margin: 0.5em 0;
   display: inline-block;
   color: #31393e;
-  position: relative;
-}
-.main-navigation a:after {
-  content: "";
-  height: 1px;
-  background: #e91048;
-  width: 100%;
-  display: block;
-  position: absolute;
-  bottom: 0;
-  left: 0;
 }
 @media screen and (min-width: 768px) {
   .main-navigation a {
@@ -2010,24 +2006,32 @@ body.admin-bar {
   }
 }
 .footer-navigation a {
-  color: white;
   position: relative;
+  color: white;
+}
+.footer-navigation a:after {
+  content: "";
+  height: 1px;
+  background: #e91048;
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.footer-navigation a:after {
+  transition: all 200ms ease;
+}
+.footer-navigation a:hover:after {
+  left: -0.3em;
+  right: -0.3em;
+  background: #3f85ea;
 }
 .footer-navigation a:visited {
   color: white;
 }
 .footer-navigation a:hover, .footer-navigation a:focus, .footer-navigation a:active {
   color: #3f85ea;
-}
-.footer-navigation a:after {
-  content: "";
-  height: 1px;
-  background: #e91048;
-  width: 100%;
-  display: block;
-  position: absolute;
-  bottom: 0;
-  left: 0;
 }
 
 /* Layout
@@ -2069,7 +2073,6 @@ body.admin-bar {
 }
 @media screen and (min-width: 768px) {
   .cws-flexbox .home-section .outer-container {
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
   }
@@ -2088,9 +2091,9 @@ body.admin-bar {
 @media screen and (min-width: 768px) {
   .home-section .section-content {
     max-width: 45%;
-    -webkit-align-self: center;
-        -ms-flex-item-align: center;
-            align-self: center;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
   }
 }
 .home-section .section-content a {
@@ -2101,11 +2104,11 @@ body.admin-bar {
   content: "";
   height: 1px;
   background: #e91048;
-  width: 100%;
   display: block;
   position: absolute;
   bottom: 0;
   left: 0;
+  right: 0;
 }
 .home-section .section-content a:active, .home-section .section-content a:hover, .home-section .section-content a:focus {
   color: #3f85ea;
@@ -2188,7 +2191,6 @@ body.admin-bar {
   background-color: rgba(0, 0, 0, 0.4);
 }
 .cws-flexbox .intro-section .outer-container {
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
 }
@@ -2208,9 +2210,9 @@ body.admin-bar {
 }
 .cws-flexbox .intro-section .section-content {
   margin-top: 0 !important;
-  -webkit-align-self: center;
-      -ms-flex-item-align: center;
-          align-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 @media screen and (max-width: 767px) {
@@ -2574,15 +2576,12 @@ img {
 }
 
 .cta-tile {
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
   min-height: 300px;
   min-height: 18.75rem;
   background-position: center center;

@@ -161,6 +161,7 @@
 		position: static;
 		padding: 0;
 		opacity: 1 !important;
+		background: none;
 		@include span-columns(3);
 		@include omega();
 		.home & {
@@ -169,10 +170,10 @@
 	}
 
 	a {
+		@extend a.underline;
 		margin: 0.5em 0;
 	    display: inline-block;
 		color: $black;
-		@include text-underline;
 
 		@include media($screen_md) {
 			margin: 0;
