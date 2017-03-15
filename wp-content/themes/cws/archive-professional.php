@@ -18,7 +18,7 @@ get_header(); ?>
 			</div>
 		</header><!-- .page-header -->
 
-		<main id="main" class="site-main clearfix" role="main">
+		<main id="main" class="site-main clearfix mt-3" role="main">
 
 		<?php if ( have_posts() ) : ?>
 

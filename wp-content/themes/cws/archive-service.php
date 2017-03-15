@@ -18,7 +18,7 @@ get_header(); ?>
 			</div>
 		</header><!-- .page-header -->
 		
-		<main id="main" class="site-main mt-4" role="main">
+		<main id="main" class="site-main mt-3" role="main">
 
 		<?php if ( have_posts() ) : ?>
 
