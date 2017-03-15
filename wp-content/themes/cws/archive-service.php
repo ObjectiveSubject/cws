@@ -18,15 +18,19 @@ get_header(); ?>
 			</div>
 		</header><!-- .page-header -->
 		
-		<main id="main" class="site-main" role="main">
+		<main id="main" class="site-main mt-4" role="main">
 
 		<?php if ( have_posts() ) : ?>
 
-			<?php while ( have_posts() ) : the_post(); ?>
-
-				<?php get_template_part( 'content-service', 'preview' ); ?>
-
-			<?php endwhile; ?>
+			<div class="clearfix">
+				<?php 
+				$count = 1;
+				while ( have_posts() ) : the_post(); ?>
+					<div class="col-md-4 <?php echo ( $count % 2 === 0 ) ? 'omega-md' : ''; ?>">
+						<?php get_template_part( 'content-service', 'preview' ); ?>
+					</div>
+				<?php $count++; endwhile; ?>
+			</div>
 
 			<?php the_posts_navigation(); ?>
 

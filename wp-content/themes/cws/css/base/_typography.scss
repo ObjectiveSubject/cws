@@ -43,21 +43,19 @@ h1, h2, h3, h4, h5, h6 {
 h1, .h1 {
 	font-size: rem(32);
 	line-height: rem(34);
-	margin-top: rem(28);
+	margin-top: 1.5rem;
 	@include media($screen-md) {
 		font-size: rem(54);
 		line-height: rem(58);
-		margin-top: rem(48);
 	}
 }
 h2, .h2 {
 	font-size: rem(26);
 	line-height: rem(32);
-	margin-top: 1.6rem;
+	margin-top: 1.5rem;
 	@include media($screen-md) {
 		font-size: rem(34);
 		line-height: rem(40);
-		margin-top: 2.5rem;
 	}
 }
 h3, .h3 {
@@ -67,7 +65,6 @@ h3, .h3 {
     @include media($screen-md) {
     	font-size: rem(28);
     	line-height: rem(32);
-    	margin-top: 2rem;
     }
 }
 h4, .h4 {
