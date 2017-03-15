@@ -7,7 +7,12 @@
 
 get_header(); ?>
 
-	<section id="intro" class="intro-section home-section text-white">
+	<?php 
+	$intro_image_id = get_field('intro_image', 'options');
+	$intro_image_src = wp_get_attachment_image_src( $intro_image_id, 'full' );
+	$intro_image_src = ( $intro_image_src ) ? $intro_image_src[0] : ''; ?>
+
+	<section id="intro" class="intro-section home-section text-white" style="background-image: url(<?php echo $intro_image_src; ?>);">
 		<div class="outer-container">
 			<div class="section-content">
 				<h1><?php the_field('intro_title', 'options'); ?></h1>

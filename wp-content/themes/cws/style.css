@@ -2161,7 +2161,6 @@ body.admin-bar {
 
 .intro-section {
   min-height: 650px;
-  background-image: url(images/intro-image.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
