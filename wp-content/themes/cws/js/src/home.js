@@ -28,7 +28,9 @@
 				});
 
 				$('.section-nav a').not($active).removeClass('active');
-				$active.addClass('active');
+				if ( $active ) {
+					$active.addClass('active');
+				}
 			});
 
 	
